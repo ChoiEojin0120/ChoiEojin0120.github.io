@@ -1,14 +1,159 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹 호스팅</title>
+    <title>최어진 - 학업 포트폴리오</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+        }
+
+        /* 헤더 스타일 */
+        header {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .profile-info {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* 3학년 대주제 섹션 */
+        .academic-year {
+            margin-top: 20px;
+        }
+
+        .year-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            border-left: 8px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* 과목 리스트 그리드 */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .placeholder-text {
+            color: #999;
+            font-style: italic;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #f0f0f0;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    git pages 입니다.
+
+    <header>
+        <h1>최어진</h1>
+        <div class="profile-info">
+            <span>학번: 202401322</span> | 
+            <span>전공: 컴퓨터공학부</span>
+        </div>
+    </header>
+
+    <main class="academic-year">
+        <h2 class="year-title">3학년 (Junior Year)</h2>
+        
+        <div class="course-grid">
+            <section class="course-card">
+                <h3>빅데이터처리</h3>
+                <div class="placeholder-text">
+                    -
+                </div>
+            </section>
+
+            <section class="course-card">
+                <h3>컴퓨터비전개론</h3>
+                <div class="placeholder-text">
+                    -
+                </div>
+            </section>
+
+            <section class="course-card">
+                <h3>컴퓨터그래픽스</h3>
+                <div class="placeholder-text">
+                    -
+                </div>
+            </section>
+
+            <section class="course-card">
+                <h3>컴퓨터구조</h3>
+                <div class="placeholder-text">
+                    -
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Eojin Choi. Built with HTML/CSS</p>
+    </footer>
+
 </body>
 </html>
-출처: https://devyihyun.tistory.com/203 [이롭게 현명하게:티스토리]
